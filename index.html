@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title> Divya Gajjarapu </title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+      <!-- JQUERY  -->
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <!-- Bootstrap CDN-->  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- User defined javascript -->
+      <script src="js/main.js" ></script>
+      <!--  User defined CSS -->
+      <link rel="stylesheet" type="text/css" href="css/common.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Stalemate">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Upright">
+   </head>
+   <body class="ninja">
+      <div class="main_name">
+         <h4>Divya Gajjarapu</h4>
+         <button type="button" class="menu btn btn-default dropdown-toggle" id="dropdown-mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         <span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger"></span></button>
+         <ul class="dropdown-menu" aria-labelledby="dropdown-mainMenu">
+            <li><a href="#" class="about" onclick="styling(this)">About</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" onclick="window.open('views/docs/SoftwareDeveloper_SridivyaGajjarapu.pdf','_blank', 'fullscreen=yes'); return false;">Resume</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" class="contact" onclick="styling(this)">Contact</a></li>
+         </ul>
+      </div>
+      <div class="discover" id="home">
+         <button class="navigate tiltEffect" onclick="explore()" name="home">Home</button>
+         <div class="child_buttons">
+            <button class="about hidden child" onclick="styling(this)" name="about">About me</button>
+            <button class="resume hidden child" name="resume" onclick="window.open('views/docs/SoftwareDeveloper_SridivyaGajjarapu.pdf','_blank', 'fullscreen=yes'); return false;">Resume</button>
+            <button class="contact hidden child" onclick="styling(this)" name="contact">Let's get in touch</button>
+         </div>
+      </div>
+      <div id="about">
+         <div class="content">
+            <div class="text">
+               <h4 class="intro"> Hi, I am Sridivya Gajjarapu</h4>
+               <h5>I am a software developer who loves to write code to build great products. 
+                  <br>Interested in solving complex problems and taking responsibility to build awesome software.</br>
+                  <br>I Love to explore diverse topics like Programming, Science, AI and Entrepreneurship. </br>
+               </h5>
+               <h5 class="hashtags">#SoftwareDeveloper<br>
+                  #RecentBookWorm<br>
+                  #AspiringEntrepreneur<br>
+                  #Life-longLearner<br>
+                  #PositiveThinker<br>
+                  #TravelEnthusiast
+               </h5>
+            </div>
+         </div>
+      </div>
+      <div id="contact">
+         <div class="content">
+            <div class="contact_icons">
+               <a href="https://www.linkedin.com/in/sridivya-gajjarapu-3baa82b7/" target="_blank" alt="LinkedIn">
+               <img src="images/linkedin.png" alt="LinkedIn" class="connect_pic" /></a>
+               <a href="https://github.com/divya1991" target="_blank" alt="Github">
+               <img src="images/Github.png" alt="Github" class="connect_pic" /></a>
+               <a href="https://www.hackerrank.com/divya_gajjarapu?hr_r=1" target="_blank" alt="Hackerrank">
+               <img src="images/HackerRankLogo.jpg" alt="Hackerrank" id="hackerrank" class="connect_pic" /></a>
+               <a href="https://www.instagram.com/divyagajjarapu/?hl=en" target="_blank" alt="Instagram">
+               <img src="images/Instagram.jpg" alt="Instagram" class="connect_pic" /></a>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
