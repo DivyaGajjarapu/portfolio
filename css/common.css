@@ -76,6 +76,7 @@ div.discover {
     background: url(../images/IMG_9689.JPG) no-repeat 68% 11% fixed;
     opacity: 0.5;
     background-size: cover;
+    background-position: top;
 }
 #main_circle {
     width: 265px;
