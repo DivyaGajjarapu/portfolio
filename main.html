@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title> Divya Gajjarapu </title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+      <!-- JQUERY  -->
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <!-- Bootstrap CDN-->  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- User defined javascript -->
+      <script src="js/main.js" ></script>
+      <!--  User defined CSS -->
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link rel="stylesheet" type="text/css" href="css/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Stalemate">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Upright">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans" >
+   </head>
+   <body class="ninja">
+      <div class="main_name">
+         <!--  <h4>Divya Gajjarapu</h4> -->
+         <button type="button" class="menu btn btn-default dropdown-toggle" id="dropdown-mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+         <span aria-hidden="true" class="glyphicon glyphicon-menu-hamburger"></span></button>
+         <ul class="dropdown-menu" aria-labelledby="dropdown-mainMenu">
+            <li><a href="#about" class="about" onclick="relocate(this)">About</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#projects" class="projects" onclick="relocate(this)">Projects</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" onclick="window.open('views/docs/SoftwareDeveloper_SridivyaGajjarapu.pdf','_blank', 'fullscreen=yes'); return false;">Resume</a></li>
+         </ul>
+      </div>
+      <header class="page1">
+         <h4>Sridivya Gajjarapu</h4>
+         <h5>Software Developer</h5>
+         <div class="social displayNone">
+            <a class="linkedin" href="https://www.linkedin.com/in/sridivya-gajjarapu-3baa82b7/" target="_blank">LinkedIn</a>
+            <a class="hackerrank" href="https://www.hackerrank.com/divya_gajjarapu?hr_r=1" target="_blank" target="_blank">HackerRank</a>
+            <!-- <a class="github" href="https://github.com/DivyaGajjarapu" target="_blank" target="_blank">Github</a>
+               --><a href="mailto:divya.g2391@gmail.com" class="email-button">Email Divya</a>
+         </div>
+      </header>
+      <div class="container" id="projects">
+         <h3>Projects</h3>
+         <div class="content">
+            <div id="project1" class="project">
+               <div class="project_header">
+                  <b>FSU - Polysonic Wind Tunnel</b> - <b>Developed in 2013</b> - <a href="http://polysonic.fsu.edu/" target="_blank" alt="Polysonic Wind Tunnel">Link</a>             	
+               </div>
+               <div class="project_description">
+                  This is a static website developed in 2013, featuring Polysonic wind tunnel facility at Florida State University .
+                  NSF and Florida State University have jointly invested ~6 million for the development of the wind tunnel facility.
+                  This site is developed using HTML and CSS.
+               </div>
+            </div>
+            <div id="project2" class="project">
+               <div class="project_header">
+                  <b>FSU - FCAAP</b> - <b>2013 to 2014</b> - <a href="http://fcaap.fsu.edu/" target="_blank" alt="FCAAP">Link</a>             	
+               </div>
+               <div class="project_description">
+                  The Florida Center for Advanced Aero Propulsion develops new 
+                  products and technologies for the Aero space industry. Polysonic Wind Tunnel is one of the FCAAP facilities.
+                  Website modified using Javascript, HTMl and CSS.
+               </div>
+            </div>
+            <div id="project3" class="project">
+               <div class="project_header">
+                  <b>FSU - Holidays and Events website</b> - <b>2014</b>              	
+               </div>
+               <div class="project_description">
+                  As part of my Masters' project, I developed UI and shopping cart functionality for an events website.
+                  Project was based on Java, JQuery, HTML, CSS.
+               </div>
+            </div>
+            <div id="project3" class="project">
+               <div class="project_header">
+                  <b>NHK - In house web application for NHK</b> - <b>2015 to Current</b>              	
+               </div>
+               <div class="project_description">
+                  Currently working as a full stack developer for a web based application using Java and Spring MVC architecture.
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" id="about">
+         <div class="about_page about_image"></div>
+         <div class="about_page about_description">
+            I'm Sridivya Gajjarapu, a software developer who loves to write code to build great products. 
+            <br>I Love to explore diverse topics like Programming, Science, Artificial Intelligence and Entrepreneurship. <br>
+            #SoftwareDeveloper<br>
+            #BookWorm<br>
+            #Life-longLearner<br>
+            #PositiveThinker<br>
+            #TravelEnthusiast 
+         </div>
+         <div class="about_page  skills">
+            <h3>Skills</h3>
+            <div class="w3-light-grey">
+               <div class="w3-container w3-round w3-green" id="80" style="width:80%">JAVA</div>
+            </div>
+            <div class="w3-light-grey">
+               <div class="w3-container w3-round w3-green" id="90" style="width:90%">HTML</div>
+            </div>
+            <div class="w3-light-grey">
+               <div class="w3-container w3-round w3-green" id="85" style="width:85%">CSS</div>
+            </div>
+            <div class="w3-light-grey">
+               <div class="w3-container w3-round w3-green" id="60" style="width:60%">SQL</div>
+            </div>
+            <div class="w3-light-grey">
+               <div class="w3-container w3-round w3-green" id="70" style="width:70%">Javascript</div>
+            </div>
+            <div class="w3-light-grey">
+               <div class="w3-container w3-round w3-green" id="20" style="width:20%">AngularJS</div>
+            </div>
+         </div>
+      </div>
+      <footer>&copy;Sridivya Gajjarapu 2017</footer>
+   </body>
+</html>

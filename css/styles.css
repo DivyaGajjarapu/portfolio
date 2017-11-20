@@ -1,0 +1,180 @@
+html,
+body {
+    height: 100%;
+}
+div.main_name {
+    color: white;
+    padding: 1em;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+button#dropdown-mainMenu {
+    float: right;
+    background-color: black;
+    border-color: #1d1c1a;
+}
+ul.dropdown-menu {
+    float: right !important;
+    right: 0 !important;
+    left: inherit !important;
+    background-color: rgba(33, 33, 33, 0.58);
+}
+ul.dropdown-menu > li > a {
+    color: #86667a;
+}
+header.page1 {
+    background: black;
+    height: 526px;
+    width: 100%;
+    position: fixed;
+    /* background-image:url(../images/divya.jpg); */
+    
+    top: 0;
+}
+header.page1 h4,
+h5 {
+    top: 40%;
+    text-align: center;
+    position: relative;
+    color: white;
+    display: none;
+    font-family: 'Cormorant Upright', serif;
+}
+header.page1 h4 {
+    font-size: 35px;
+    text-shadow: 4px 4px 7px rgb(175, 58, 133);
+}
+header.page1 h5 {
+    font-size: 20px;
+    color: #ffcaeb;
+}
+a.linkedin {
+    background-image: url(../images/linkedin.png);
+    background-size: cover;
+}
+a.github {
+    background-image: url(../images/Github.png);
+    background-size: cover;
+}
+a.email-button {
+    background-image: url(../images/email.png);
+    background-size: cover;
+}
+a.hackerrank {
+    background-image: url(../images/hackerrank.png);
+    background-size: cover;
+    height: 42px !important;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    width: 45px !important;
+}
+div.social {
+    text-align: center;
+    padding-top: 0;
+    position: relative;
+    top: 39%;
+}
+.displayNone {
+    display: none;
+}
+div.social a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-indent: -999em;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+div#projects {
+    margin: 526px auto 0 auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    padding-top: 20px;
+}
+div.project {
+    width: 60%;
+    height: 100%;
+    background: #c34a4a1f;
+    margin: 24px 0;
+    position: relative;
+    left: 20%;
+}
+.project_header {
+    padding: 16px 0px 0px 0px;
+    text-align: -webkit-center;
+    color: grey;
+}
+.project_description {
+    margin: 22px 30px;
+    color: #21101078;
+    font-family: serif;
+    text-align: justify;
+}
+div#projects > h3,
+div#about >h3 {
+    text-align: center;
+}
+div.about_image {
+    background-image: url(../images/divya.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    clip-path: ellipse(200px 200px at 200px 203px);
+}
+div#about {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    padding-top: 20px;
+    height: 120%;
+}
+.about_page {
+    width: 50% !important;
+    display: inline-block;
+    float: left;
+    height: 50% !important;
+}
+.about_page.about_description {
+    height: 100%;
+    border-left: 1px #e0e0e0 solid;
+    padding: 3% 5% 1% 5%;
+    text-align: center;
+    font-family: Stalemate !important;
+    color: #8c4c74 !important;
+    text-shadow: 4px 4px 7px #aaa;
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+.about_page.skills {
+    padding: 33px 0 0 0;
+    width: 70% !important;
+    height: 50%;
+    margin: 0 15%;
+}
+.w3-light-grey {
+    margin: 25px;
+}
+.about_page.skills > h3 {
+    text-align: center;
+    color: #cccccc;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: #86505791;
+}
