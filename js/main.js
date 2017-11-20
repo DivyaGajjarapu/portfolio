@@ -1,43 +1,26 @@
-var visible = 0;
-
-function explore() {
-    visible = !visible;
-    if (visible) {
-        $("div.child_buttons").children("button").each(function(index) {
-            var button = $(this);
-            setTimeout(function() {
-                $(button).removeClass("hidden");
-            }, 200 * index);
-            button.css({
-                'transform': 'translate(' + (10) * (-1) + 'em,' + (1) * 10 + 'em)'
-            });
-        })
-    } else {
-        $("div.child_buttons").children("button").each(function(index) {
-            var button = $(this);
-            setTimeout(function() {
-                $(button).addClass("hidden");
-            }, 100 * index);
-
-        });
-    }
-}
-
-function styling(el) {
-    var locationHash = $(el).attr('class').split(' ')[0];
-    $('html, body').animate({
-        'scrollTop': ($("#" + locationHash).position().top) - 55
-    }, 800, function() {})
-    if (currentHash != locationHash) {
-        window.location.hash = locationHash;
-    }
-}
-
 $(document).ready(function() {
-    $("button.navigate").css("right", "1000px");
-    $("div.child_buttons").css("right", "1100px");
-})
+    $("header.page1 h4").fadeIn(3000);
+    $("header.page1 h5").fadeIn(9000);
+    $("div.displayNone").fadeIn(11000);
+    loadSkills();
+});
 
+function relocate(el) {
+    //	var currentHash = $(this).parent("div").attr('id');
+    var locationHash = $(el).attr('class');
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#" + locationHash).offset().top - 65
+    }, 800, function() {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = "#" + locationHash;
+    });
+    if (locationHash == "about") {
+        loadSkills();
+    }
+
+}
 var currentHash = "";
 $(document).scroll(function(e) {
     $("div.content").each(function() {
@@ -53,5 +36,26 @@ $(document).scroll(function(e) {
             history.pushState(null, null, "#");
             currentHash = "";
         }
+        if (hash == "about") {
+            loadSkills();
+        }
     })
-})
+});
+
+function loadSkills() {
+    $("div.w3-green").each(function() {
+        var $this = $(this);
+        var width = $this.attr("id");
+        var IntervalWidth = 1;
+        var id = setInterval(frame, 20);
+
+        function frame() {
+            if (IntervalWidth >= width) {
+                clearInterval(id);
+            } else {
+                IntervalWidth++;
+                $this.css("width", IntervalWidth + '%');
+            }
+        }
+    })
+}

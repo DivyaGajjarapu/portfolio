@@ -73,11 +73,11 @@ div.title {
 div.discover {
     width: 100%;
     background-color: black;
-    background: url(../images/IMG_9689.JPG) no-repeat 68% 11% fixed;
+    background: url(../images/background1.JPG) no-repeat 66% 11% fixed;
     opacity: 0.5;
     background-size: cover;
-    background-position: top;
-}
+/*     background-position: top;
+ */}
 #main_circle {
     width: 265px;
     height: 265px;
@@ -171,27 +171,29 @@ button.navigate:hover {
     opacity: 0.9;
     color: black;
 }
-@keyframes tilt_navigate_about_child {
+@keyframes tilt_navigate_projects_child {
     from {
-        transform: rotateY(20deg) translate(74em, 17em)
+        transform: rotateY(20deg) translate(74em, -31em)
     }
     to {
-        transform: rotateX(20deg) translate(69em, 18em);
+        transform: rotateX(20deg) translate(69em, -30em);
     }
 }
-button.about.child {
-    animation-name: tilt_navigate_about_child;
+button.projects.child {
+    animation-name: tilt_navigate_projects_child;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
 @keyframes tilt_navigate_resume_child {
     from {
-        transform: rotateY(20deg) translate(79em, 24em)
+        transform: rotateY(20deg) translate(79em, -24em)
     }
     to {
-        transform: rotateX(20deg) translate(74em, 26em);
+        transform: rotateX(20deg) translate(74em, -23em);
     }
+    
+    
 }
 button.resume.child {
     animation-name: tilt_navigate_resume_child;
@@ -200,10 +202,10 @@ button.resume.child {
 }
 @keyframes tilt_navigate_contact_child {
     from {
-        transform: rotateY(20deg) translate(90em, 27em)
+         transform: rotateY(20deg) translate(87em, -21em)
     }
     to {
-        transform: rotateX(20deg) translate(84em, 29em);
+       transform: rotateX(20deg) translate(82em, -20em);
     }
 }
 button.contact.child {
@@ -213,10 +215,10 @@ button.contact.child {
 }
 @keyframes tilt_navigate {
     from {
-        transform: rotateY(20deg) translate(56em, 5em)
+        transform: rotateY(20deg) translate(56em, -26em)
     }
     to {
-        transform: rotateX(20deg) translate(53em, 5em);
+        transform: rotateX(20deg) translate(53em, -27em);
     }
 }
 button.navigate.tiltEffect {
@@ -251,7 +253,7 @@ div.main_name {
     }
 }
 @media screen and (min-width: 701px) {
-    div#about {
+    div#projects {
         background-color: #3a0022;
         background-color: black;
         background: -webkit-linear-gradient(rgb(0, 0, 0), rgba(46, 144, 191, 0.95));
@@ -266,10 +268,11 @@ div.main_name {
         
         background: linear-gradient(rgb(0, 0, 0), rgba(46, 144, 191, 0.95));
         /* Standard syntax */
+        height: 30em;
     }
 }
 @media screen and (max-width: 699px) {
-    div#about {
+    div#projects {
         height: 100%;
         background-color: black;
         background: -webkit-linear-gradient(rgb(0, 0, 0), rgba(46, 144, 191, 0.95));
@@ -283,6 +286,8 @@ div.main_name {
         
         background: linear-gradient(rgb(0, 0, 0), rgba(46, 144, 191, 0.95));
         /* Standard syntax */
+        
+        /*height: 30em;*/
     }
 }
 
@@ -290,7 +295,7 @@ div.main_name {
     div.text >h5 {
         font-size: 1.5em !important;
         text-align: center;
-        color: #e8dcdc !important;
+        color: #ffffff !important;
         font-family: 'Cormorant Upright', serif;
     }
 }
@@ -304,8 +309,8 @@ div.main_name {
         text-shadow: 4px 4px 7px #aaa;
     }
 }
-div#about > div.content {
-    padding-top: 15px;
+div#projects > div.content {
+    padding-top: 70px;
 }
 @media screen and (min-width: 800px) {
     div.text > h5 {
@@ -354,7 +359,9 @@ div#contact {
 }
 @media screen and (max-width: 360px) {
     .contact_icons {
-        margin: 0 0 0 1.2em;
+            display: grid;
+   			float: right !important;
+   			margin: 5em 0 0 0;
     }
     img#hackerrank {
         height: 7.2vh;
@@ -386,31 +393,58 @@ div#contact {
 }
 @media screen and (min-width: 361px) and (max-width: 699px) {
     .contact_icons {
-        margin: 0 0 0 3em;
+            display: grid;
+    			float: right !important;
+    			margin:10em 0 0 0;
     }
 }
 @media screen and (min-width: 700px) {
     img.connect_pic {
-        width: 9vw;
+        width: 11vw;
     }
     .contact_icons {
-        margin: 0 0em;
+           display: grid;
+   		   float: right !important;
+   		   margin: 11em 3em 0 0;
     }
     .contact_icons a {
-        margin: 4em;
+        margin: 0.5em;
     }
     img#hackerrank {
         height: 6.5vh;
     }
+    div#contact{
+		height:90em;
+	}
+    
 }
-@media screen and (min-width: 1251px) {
+@media screen and (min-width: 1251px) and (max-height:900px) {
     img.connect_pic {
         margin: 0 3vw;
     }
     img#hackerrank {
-        height: 12.5vh;
+        height: 7.5vh;
+    }
+     div#contact{
+		height:52em;
+	}
+	 img.connect_pic {
+        width: 5vw;
     }
 }
+@media screen and (min-width: 1251px) and (min-height:901px) {
+	 div#contact{
+		height:63em;
+	}
+	 img.connect_pic {
+        width: 6vw;
+    }
+	}
+@media screen and (min-width: 1350px) {
+	div#contact{
+		height:59em;
+	}
+	}
 @media screen and (min-width: 1000px) {
     img.connect_pic {
         margin: 0 2vw;
@@ -436,8 +470,76 @@ div#contact > div.content > div {
 }
 
 @media screen and (min-width: 800px) {
-    div#about > .content > .text {
+    div#projects > .content > .text {
         width: 49%;
         margin-left: 17%;
     }
+}
+div#contact  {
+    width: 100%;
+    background-color: black;
+    background: url(../images/divya.jpg) no-repeat 40% 10% fixed;
+    background-size: cover;
+	float: left;
+	margin: 0.5px;
+}
+
+@media screen and (min-width:371px) and (max-width:450px){
+	div#contact{
+	height:50em;
+	}
+}
+@media screen and (max-width:370px){
+	div#contact{
+	height:40em;
+	}
+}
+@media screen and (min-width:451px) and (max-width:699px){
+ div#contact{
+	height:70em;
+	}
+}
+.contact_icons a {
+    margin: 0.5em 0;
+}
+@media screen and (max-width:369px){
+img.project {
+    width: 10em;
+    height: 4em;
+    margin: 20px 0px 0px 119px;
+}
+div.project > h5 {
+    width: 90%;
+    float: right;
+    margin: 19px 220px 0 0px;
+    font-family: 'Josefin Sans', serif
+}
+}
+@media screen and (min-width:370px) and (max-width:430px){
+img.project {
+    width: 10em;
+    height: 4em;
+    margin: 20px 0px 0px 119px;
+    float: left;
+}
+}
+@media screen and (min-width:431px){
+img.project {
+    width: 10em;
+    height: 4em;
+    margin: 20px 0px 0px 119px;
+    float: left;
+}
+}
+@media screen and (min-width:370px){
+div.project > h5 {
+    width: 50%;
+    float: right;
+    margin: 19px 220px 0 0px;
+    font-family: 'Josefin Sans', serif;
+}
+}
+div#projects > .content > div.project {
+    display: inline-block;
+    width: 100%;
 }
