@@ -104,12 +104,12 @@ div#projects {
     padding-top: 20px;
 }
 div.project {
-    width: 60%;
+    width: 70%;
     height: 100%;
     background: #c34a4a1f;
     margin: 24px 0;
     position: relative;
-    left: 20%;
+    left: 15%;
 }
 .project_header {
     padding: 16px 0px 0px 0px;
@@ -177,4 +177,7 @@ footer {
     text-align: center;
     background-color: black;
     color: #86505791;
+}
+div#about > h3 {
+    color: #bbbbbb;
 }
