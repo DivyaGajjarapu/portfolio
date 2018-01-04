@@ -126,13 +126,25 @@ div#projects > h3,
 div#about >h3 {
     text-align: center;
 }
-div.about_image {
-    background-image: url(../images/divya.jpg);
+/* div.about_image {
+    background-image: url(../images/div.png);
     background-size: cover;
     height: 100%;
     width: 100%;
     background-position: top;
     clip-path: ellipse(200px 200px at 200px 203px);
+} */
+@media screen and (max-width: 1000px) {
+.about_page.about_image img {
+   margin: 20px 0 0 -8px;
+    width: 100%;
+}
+}
+@media screen and (min-width: 1000px) {
+.about_page.about_image img {
+  	margin: 20px 0 0 132px;
+    width: 60%;
+}
 }
 div#about {
     width: 100%;
@@ -140,7 +152,6 @@ div#about {
     position: relative;
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     padding-top: 20px;
-    height: 150%;
 }
 .about_page {
     width: 50% !important;
