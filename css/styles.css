@@ -134,13 +134,19 @@ div#about >h3 {
     background-position: top;
     clip-path: ellipse(200px 200px at 200px 203px);
 } */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 420px) {
+.about_page.about_image img {
+   margin: 150px 0 0 -8px;
+    width: 100%;
+}
+}
+@media screen and (min-width: 421px) and (max-width: 1000px) {
 .about_page.about_image img {
    margin: 20px 0 0 -8px;
     width: 100%;
 }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
 .about_page.about_image img {
   	margin: 20px 0 0 132px;
     width: 60%;
@@ -164,7 +170,7 @@ div#about {
     border-left: 1px #e0e0e0 solid;
     padding: 3% 5% 1% 5%;
     text-align: center;
-    font-family: Stalemate !important;
+    font-family: Redressed !important;
     color: #8c4c74 !important;
     text-shadow: 4px 4px 7px #aaa;
     font-size: 1.5em;
