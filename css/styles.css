@@ -59,6 +59,15 @@ a.github {
     background-image: url(../images/Github.png);
     background-size: cover;
 }
+a.leetcode {
+	background-image: url(../images/leetcode.png);
+    background-size: cover;
+    height: 41px !important;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    width: 45px !important;
+}
 a.email-button {
     background-image: url(../images/email.png);
     background-size: cover;
@@ -66,7 +75,7 @@ a.email-button {
 a.hackerrank {
     background-image: url(../images/hackerrank.png);
     background-size: cover;
-    height: 42px !important;
+    height: 41px !important;
     border-radius: 3px;
     position: relative;
     top: 4px;
